@@ -1,0 +1,12 @@
+{
+    "require": {
+        "nikic/php-parser": "^4.10",
+        "consolidation/robo": "^2.2",
+        "nette/php-generator": "^3.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dodo\\TestGenerator\\":"test/TestGenerator"
+        }
+    }
+}
