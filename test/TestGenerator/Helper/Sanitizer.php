@@ -14,4 +14,9 @@ class Sanitizer {
     return $file;
   }
 
+  static function removeHtml($file) {
+
+    return $file;
+  }
+
 }

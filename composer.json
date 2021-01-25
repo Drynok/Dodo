@@ -1,13 +1,29 @@
 {
-    "require": {
-        "nikic/php-parser": "^4.10",
-        "consolidation/robo": "^2.2",
-        "nette/php-generator": "^3.5"
-    },
-    "autoload": {
-        "psr-4": {
-            "Dodo\\TestGenerator\\":"test/TestGenerator",
-            "Dodo":"src"
+  "repositories": [
+    {
+      "type": "package",
+      "package": {
+        "name": "drynok/js2php",
+        "version": "master",
+        "source": {
+          "url": "https://github.com/Drynok/js2php.git",
+          "type": "git",
+          "reference": "master"
         }
+      }
     }
+  ],
+  "require": {
+    "nikic/php-parser": "^4.10",
+    "consolidation/robo": "^2.2",
+    "nette/php-generator": "^3.5",
+    "symfony/http-client": "^5.2",
+    "drynok/js2php": "master"
+  },
+  "autoload": {
+    "psr-4": {
+      "Dodo\\TestGenerator\\": "test/TestGenerator",
+      "Dodo\\": "src/"
+    }
+  }
 }

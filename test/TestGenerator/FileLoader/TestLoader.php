@@ -6,7 +6,7 @@ namespace Dodo\TestGenerator\FileLoader;
 use Exception;
 use Symfony\Component\HttpClient\HttpClient;
 
-abstract class FileLoader implements FileLoaderInterface {
+abstract class TestLoader implements TestLoaderInterface {
 
   /**
    * @var \Symfony\Contracts\HttpClient\HttpClientInterface
@@ -20,9 +20,6 @@ abstract class FileLoader implements FileLoaderInterface {
     $this->http_client = $http_client;
   }
 
-  /**
-   *
-   */
   public function loadFile(string $url): array {
     $content = [];
     $response = $this->http_client->request('GET', 'https://api.github.com/repos/symfony/symfony-docs');
