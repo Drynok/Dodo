@@ -11,6 +11,18 @@
           "reference": "master"
         }
       }
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "aivis/file-upload",
+        "version": "master",
+        "source": {
+          "url": "https://github.com/aivis/PHP-file-upload-class.git",
+          "type": "git",
+          "reference": "master"
+        }
+      }
     }
   ],
   "require": {
@@ -18,7 +30,8 @@
     "consolidation/robo": "^2.2",
     "nette/php-generator": "^3.5",
     "symfony/http-client": "^5.2",
-    "drynok/js2php": "master"
+    "drynok/js2php": "master",
+    "aivis/file-upload": "master"
   },
   "autoload": {
     "psr-4": {

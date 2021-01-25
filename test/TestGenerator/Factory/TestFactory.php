@@ -1,8 +1,10 @@
 <?php
 
+
 namespace Dodo\TestGenerator\Factory;
 
-class TranspilerFactory implements Factory {
+
+class TestFactory implements Factory {
 
   public function create() {
 
